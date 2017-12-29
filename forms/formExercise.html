@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form Exercise</title>
+  </head>
+  <body>
+  <h1>Register</h1>
+
+  <form method="POST">
+    <div>
+      <label for="firstName">First Name: </label>
+      <input id="firstName" type="text" name="firstName" placeholder="e.g. John" required>
+
+      <label for="lastName">Last Name: </label>
+      <input id="lastName" type="text" name="lastName" placeholder="e.g. Smith" required>
+    </div>
+
+    <div>
+      <label for="male">Male</label>
+      <input id="male" type="radio" name="gender" value="male" required>
+
+      <label for="female">Female</label>
+      <input id="female" type="radio" name="gender" value="female" required>
+
+      <label for="other">Other</label>
+      <input id="other" type="radio" name="gender" value="other" required>
+    </div>
+
+    <div>
+      <label for="email">Email: </label>
+      <input type="email" name="email" placeholder="your email" required>
+
+      <label for="password">Password: </label>
+      <input type="password" name="password" pattern=".{5,10}" required title="Password must be between 5 and 10 characters long">
+    </div>
+
+    <div>
+      <label for="birthday">Birthday: </label>
+      <select name="Month">
+        <option value="Month">Month</option>
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+      </select>
+      <select name="Day">
+        <option value="Day">Day</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <select name="Year">
+        <option value="Year">Year</option>
+        <option value="1983">1983</option>
+        <option value="1984">1984</option>
+        <option value="1985">1985</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="conditions">I agree to the terms and conditions</label>
+      <input id="conditions" type="checkbox" name="conditions" required>
+    </div>
+
+    <input type="submit" name="submit">
+    <!-- <button>Submit</button> -->
+
+  </form>
+
+  </body>
+</html>
